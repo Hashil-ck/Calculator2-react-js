@@ -138,3 +138,20 @@
       }
       
 }  
+ 
+  @media(max-width:360px)
+{
+    h1{
+      letter-spacing: 0.7rem;
+      font-size: 48px;
+      color: #968314;
+    }
+
+    .calculator {
+        margin-left: 2%;
+        width: 21rem;
+        height: 32rem;
+
+      }
+      
+}  
