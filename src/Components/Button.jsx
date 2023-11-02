@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button(props) {
+function Button({label,onClick}) {
   const style = btn =>{
   const className = {
     '=':'equals',
@@ -17,8 +17,8 @@ function Button(props) {
 
   
     return (
-      <button className={`${style( props.label)} button`} onClick={props.onClick}>
-        {props.label}
+      <button className={`${style(label)} button`} onClick={onClick}>
+        {label}
       </button>
     );
   }

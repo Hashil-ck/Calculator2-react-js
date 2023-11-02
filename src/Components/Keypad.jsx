@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button';
 
-function Keypad(props) {
+function Keypad({onButtonClick}) {
     const buttons = [
 
       "C",
@@ -33,9 +33,9 @@ function Keypad(props) {
       <div className="keypad">
         {buttons.map((button) => (
           <Button
-            key={button}
+            
             label={button}
-            onClick={() => props.onButtonClick(button)}
+            onClick={() => onButtonClick(button)}
           />
         ))}
       </div>

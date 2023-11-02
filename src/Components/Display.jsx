@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Display(props) {
+function Display({input}) {
     return (
       <div className="display">
         
@@ -11,7 +11,7 @@ function Display(props) {
          
             placeholder='0'
             
-            value={props.input}
+            value={input}
             readOnly
           
           />
